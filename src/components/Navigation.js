@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from "react";
+import { Link } from "react-router";
 
-const Navigation = ({ className, buttonClassName }) =>
+const Navigation = ({ className, buttonClassName }) => (
   <nav className={className}>
     <Link className={buttonClassName} to="/">
       Home
@@ -12,11 +12,15 @@ const Navigation = ({ className, buttonClassName }) =>
     <Link className={buttonClassName} to="weather">
       Weather
     </Link>
+    <Link className={buttonClassName} to="login">
+      Weather
+    </Link>
   </nav>
+);
 
 Navigation.defaultProps = {
-  className: '',
-  buttonClassName: 'c-button'
-}
+  className: "",
+  buttonClassName: "c-button"
+};
 
-export default Navigation
+export default Navigation;
