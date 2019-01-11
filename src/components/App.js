@@ -1,12 +1,11 @@
-import React from 'react'
-import Header from './Header'
+import React from "react";
+import Header from "./Header";
 
-const App = ({ children }) =>
-  <div>
-    <Header />
-    <div>
-      {children}
-    </div>
+const App = ({ children }) => (
+  <div key="wrapper">
+    {/*     <Header /> */}
+    <div key="children-wrapper">{children}</div>
   </div>
+);
 
-export default App
+export default App;

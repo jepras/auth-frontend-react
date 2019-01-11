@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import SignIn from "../containers/SignIn";
 
-const Login = () => [
+const Mfa = () => [
   <Helmet>
     <meta
       name="description"
@@ -10,8 +10,8 @@ const Login = () => [
     />
   </Helmet>,
   <main className="p-todo">
-    <h3 className="p-todo__title">Login mofo</h3>
+    <h3 className="p-todo__title">Mfa mofo</h3>
     <SignIn />
   </main>
 ];
-export default Login;
+export default Mfa;
